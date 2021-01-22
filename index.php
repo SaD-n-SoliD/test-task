@@ -28,7 +28,7 @@
 
 		<main class="main">
 			<div class="input">
-				<form class="input__form violet-border text_fields" action="#">
+				<form class="input__form violet-border text_fields" action="#" method="POST">
 					<p class="input__form-title text_lil-title">Калькулятор кредитов</p>
 					<label class="input__label" for="credit-sum">Сумма кредита</label>
 					<input class="input__field" id="credit-sum" name="credit-sum" type="text">
