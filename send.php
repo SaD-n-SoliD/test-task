@@ -75,7 +75,11 @@ $headers = "Content-type: text/html; charset=\"utf-8\"\r\nFrom: application";
 
 $isSent = mail($recepient, $pageTitle, $message, $headers);
 
-echo json_encode($isSent ? ['Ваша заявка успешно принята.'] : 'Ваша заявка не доставлена.');
+if ($isSent) {
+	echo json_encode(['Ваша заявка успешно принята.']);
+} else {
+	conclusion_information('Ваша заявка не доставлена.');
+}
 
 // конец отправки письма
 
